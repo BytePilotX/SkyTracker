@@ -1,7 +1,7 @@
 # SkyTracker
 This is a project I would like to begin working on in the near future, it will be a self-hosting solution for people with ADSB equipment or SDRs they would like to use to track aircraft.
 
-**PLANNED FEATURES IN THE NEW FUTURE**
+**PLANNED FEATURES IN FUTURE UPDATES**
 - Self hosted and aesthetically pleasing website
 - 24/7 Aircraft tracking and logging
 - Timelapses and replays based off of the flightplans of logged aircraft
