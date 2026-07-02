@@ -14,6 +14,7 @@ This is a project I would like to begin working on in the near future, it will b
   - This project will take a lot of time and workload for me to build.
   - I am very happy to take on board a select few people to help with development
   - If you want to contribute open a pull request and see where it goes from there!
+  - All current progress will be in the 'dev' branch. Do not expect a working or complete product as its only there to show progress.
 
 **PLANNED HARDWARE SPECIFICATIONS**
 SDR:
