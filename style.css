@@ -1,0 +1,81 @@
+.loading_screen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: Geist Pixel;
+}
+
+.loading {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    border-top : 8px dashed #000;
+}
+
+#plane {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: -40px; 
+    display: block;
+    transform: translateX(-50%);
+    animation: takeoff 4s linear infinite;
+}
+
+@keyframes takeoff {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 40%;
+        transform: rotate(-10deg) translateY(-5px);
+    }
+    100% {
+        left: 100%;
+        transform: rotate(-20deg) translateY(-20px);
+    }
+}
+
+
+
+#title:hover {
+    transition: 0.5s;
+    text-shadow: 2px 2px 1px #000;
+    animation-name: title-hover;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: slide-bottom;
+    -webkit-animation-duration: 1s;
+    animation-name: slide-bottom;
+    animation-duration: 1s;
+}
+
+@keyframes -webkit-slide-bottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-bottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}

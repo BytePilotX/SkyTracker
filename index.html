@@ -2,8 +2,32 @@
 <html>
     <head>
         <title>SkyTracker</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
     </head>
-    <body>
-       <h1>Test Commit.</h1>
+    <body onload="onPageLoad()">
+        <div class="loading_screen" id="loading_screen">
+            <div class="loading"><img id="plane" src="media/loading/plane3.png"/></div>
+            <h1 id="title">SkyTracker</h1>
+        </div>
+        <div style="display: none;" id="home_page" class="home">
+            <h1>Home page is WIP.</h1>
+            <p>Im currently just working on the aesthetic and skeleton of this project.
+                As of now I only have a loading screen but I plan to further refine it in the next few weeks.
+            </p>
+        </div>
     </body>
+    <script>
+        var timeOut;
+        function onPageLoad() {
+            timeOut = setTimeout(showPage, 9000);
+        }
+
+        function showPage() {
+            document.getElementById("loading_screen").style.display = "none";
+            document.getElementById("home_page").style.display = "flex";
+        }
+    </script>
 </html>
