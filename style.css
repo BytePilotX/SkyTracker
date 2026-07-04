@@ -50,12 +50,14 @@
     animation-name: title-hover;
 }
 
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: slide-bottom;
-    -webkit-animation-duration: 1s;
-    animation-name: slide-bottom;
-    animation-duration: 1s;
+.home{
+   justify-content: center;
+   align-items: center;
+   position: relative; 
+   -webkit-animation-name: slide-bottom;
+   -webkit-animation-duration: 1s;
+   animation-name: slide-bottom;
+   animation-duration: 1s;
 }
 
 @keyframes -webkit-slide-bottom {
@@ -79,3 +81,4 @@
         opacity: 1;
     }
 }
+
