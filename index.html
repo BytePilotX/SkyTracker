@@ -3,31 +3,53 @@
     <head>
         <title>SkyTracker</title>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="sidebar.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
     </head>
     <body onload="onPageLoad()">
-        <div class="loading_screen" id="loading_screen">
-            <div class="loading"><img id="plane" src="media/loading/plane3.png"/></div>
-            <h1 id="title">SkyTracker</h1>
-        </div>
-        <div style="display: none;" id="home_page" class="home">
-            <h1>Home page is WIP.</h1>
-            <p>Im currently just working on the aesthetic and skeleton of this project.
-                As of now I only have a loading screen but I plan to further refine it in the next few weeks.
-            </p>
-        </div>
-    </body>
-    <script>
-        var timeOut;
-        function onPageLoad() {
-            timeOut = setTimeout(showPage, 9000);
-        }
 
-        function showPage() {
-            document.getElementById("loading_screen").style.display = "none";
-            document.getElementById("home_page").style.display = "block";
-        }
-    </script>
+        <!--LOADING SCREEN DISABLED DURING DEVELOPMENT -->
+        <div class="loading_screen" id="loading_screen">
+
+            <div class="loading"><img id="plane" src="media/loading/plane3.png"/></div>
+
+            <h1 id="title">SkyTracker</h1>
+
+        </div>
+
+        <div style="display: none;" id="home_page" class="home">
+
+             <div class="sidebar" id="side_bar">
+                
+                <aside>
+
+                    <nav class="hidden-sidebar-links">
+                        <img src="media/sidebar/sky_blank_circle.png" id="sidebar_logo"/>
+                        <h2>SkyTracker</h2>
+                        <a href="./index.html">Map</a>
+                        <a href="#">Flights</a>
+                        <a href="#">Logbook</a>
+                        <a href="#">Settings</a>
+                    </nav>
+
+                </aside>
+
+            </div>
+            
+            <div id="map"></div>
+
+        </div>
+        
+    </body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="./loading.js"></script>
+    <script src="./map.js"></script>
 </html>

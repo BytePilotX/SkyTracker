@@ -45,14 +45,12 @@
 
 
 #title:hover {
-    transition: 0.5s;
+    transition: 0.35s;
     text-shadow: 2px 2px 1px #000;
     animation-name: title-hover;
 }
 
 .home{
-   justify-content: center;
-   align-items: center;
    position: relative; 
    -webkit-animation-name: slide-bottom;
    -webkit-animation-duration: 1s;
@@ -82,3 +80,16 @@
     }
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 99vh; 
+}
