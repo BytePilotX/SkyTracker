@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Settings</title>
+        <link rel="stylesheet" href="/FrontEndSite/CSS/sidebar.css"/>
+        <link rel="stylesheet" href="/FrontEndSite/CSS/style.css"/>
+        <link rel="stylesheet" href="/FrontEndSite/CSS/settingStyle.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    </head>
+    
+    <body onload="onPageLoad()">
+
+        <div class="loading_screen" id="loading_screen">
+            <div class="loading"><img id="plane" src="/FrontEndSite/media/loading/plane3.png"/></div>
+
+            <h1 id="title">SkyTracker</h1>
+        </div>
+
+        <div class="sidebar" id="side_bar">
+            <aside>
+                <nav class="hidden-sidebar-links">
+                    <img src="/FrontEndSite/media/sidebar/sky_blank_circle.png"/>
+                    <h2>SkyTracker</h2>
+                    <a href="/FrontEndSite/HTML/index.html">Map</a>
+                    <a href="#">Flights</a>
+                    <a href="#">Logbook</a>
+                    <a href="/FrontEndSite/HTML/settings.html">Settings</a>
+                </nav>
+            </aside>
+        </div>
+
+        <div class="settings_home" id="settings_home">
+            <div class="top_home" id="top_home">
+                <h1>Settings!</h1>
+                <p>
+                    Here you can change your preferences for this application. Below will allow you to change
+                    some properties of this site.
+                </p>
+            </div>
+            <div class="settings_table">
+                <table class="inside-settings-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Setting</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Appearence</th>
+                            <td>Dark mode</td>
+                            <td><input id="appearance-checkbox" type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="/FrontEndSite/JS/loading.js"></script>
+    <script src="/FrontEndSite/JS/settings.js"></script>
+</html>

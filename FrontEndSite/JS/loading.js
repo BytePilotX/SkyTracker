@@ -1,6 +1,5 @@
-var timeOut;
 function onPageLoad() {
-    timeOut = setTimeout(showPage, 6500);
+    window.addEventListener('load', showPage());
 }
 
 function showPage() {
