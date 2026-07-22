@@ -3,24 +3,19 @@
     padding-right: 25%;
     padding-top: 25%;
     padding-bottom: 25%;
+    text-align: center;
     font-family: Geist Pixel;
 }
 
 .settings_table {
-    padding-left: 25%;
-    padding-right: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inside-settings-table, td, th {
     border: 1px solid;
     padding: 5px;
     border-collapse: collapse;
-
 }
 
-#check {
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 25%;
-    padding-bottom: 25%;
-}
