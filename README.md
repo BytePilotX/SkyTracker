@@ -1,7 +1,8 @@
 # SkyTracker
 This is a project I would like to begin working on in the near future, it will be a self-hosting solution for people with ADSB equipment or SDRs they would like to use to track aircraft.
 
-<img width="750" height="750" alt="image" src="https://github.com/user-attachments/assets/d130f547-150b-4117-992c-9b0fbd461224" />
+<img width="750" height="750" alt="sky_blank_circle" src="https://github.com/user-attachments/assets/c7154618-a7af-4e49-91d7-0ac3f264a3c3" />
+
 
 **PLANNED FEATURES IN FUTURE UPDATES**
 - Self hosted and aesthetically pleasing website
