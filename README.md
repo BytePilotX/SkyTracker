@@ -9,6 +9,7 @@ This is a project I would like to begin working on in the near future, it will b
 - 24/7 Aircraft tracking and logging
 - Timelapses and replays based off of the flightplans of logged aircraft
 - A logbook showing which aircraft fly over your area, which are most common and the most common route!
+- dump1090 backend which will allow for smooth and seamless ADS-B decoding (All credits for this software go to antirez and other open source contributers to the amazing dump1090 project)
 
   **NOTICES**
   - This is not a guranteed project and I may or may not continue developing it.
