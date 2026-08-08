@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Settings</title>
-        <link rel="stylesheet" href="../CSS/sidebar.css"/>
+        <title>Flights</title>
         <link rel="stylesheet" href="../CSS/style.css"/>
-        <link rel="stylesheet" href="../CSS/settingStyle.css"/>
+        <link rel="stylesheet" href="../CSS/sidebar.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
@@ -12,57 +11,41 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
     </head>
-    
-    <body onload="onPageLoad()" id="body">
+
+    <body onload="onPageLoad()">
 
         <div class="loading_screen" id="loading_screen">
+
             <div class="loading" id="loading"><img id="plane" src="../media/loading/plane3.png"/></div>
 
             <h1 id="title">SkyTracker</h1>
         </div>
 
-        <div class="home" id="main_page" style="visibility: hidden;">
+        <div id="main_page" class="home" style="visibility: hidden;">
 
             <div class="sidebar" id="side_bar">
+                
                 <aside>
+
                     <nav class="hidden-sidebar-links">
-                        <img src="../media/sidebar/sky_blank_circle.png"/>
+                        <img src="../media/sidebar/sky_blank_circle.png" id="sidebar_logo"/>
                         <h2>SkyTracker</h2>
                         <a href="../HTML/index.html">Map</a>
                         <a href="../HTML/flights.html">Flights</a>
                         <a href="../HTML/logbook.html">Logbook</a>
                         <a href="../HTML/settings.html">Settings</a>
                     </nav>
+
                 </aside>
+
             </div>
 
-            <div class="top_home" id="top_home">
-                <h1>Settings!</h1>
-                <p>
-                    Here you can change your preferences for this application. Below will allow you to change
-                    some properties of this site.
-                </p>
-            </div>
-            <div class="settings_table">
-                <table class="inside-settings-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Setting</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Appearence</th>
-                            <td>Dark mode</td>
-                            <td><input id="appearance-checkbox" type="checkbox"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+
         </div>
+
     </body>
+
     <script src="../JS/loading.js"></script>
     <script src="../JS/settings.js"></script>
     <script>
@@ -73,8 +56,6 @@
             planeImg.src = "../media/loading/plane3.png";
         } else if (storedAppearance === "dark") {
             planeImg.src = "../media/loading/plane3dark.png";
-        } else if (storedAppearance === "light") {
-            planeImg.src = "../media/loading/plane3.png";
         }
-    </script>
+    </script> 
 </html>

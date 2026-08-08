@@ -1,5 +1,4 @@
-.logbook_home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logbook_top_home {
+    text-align: center;
+    font-family: Geist Pixel;
 }

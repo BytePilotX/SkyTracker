@@ -22,18 +22,39 @@ body[data-theme="dark"] {
     font-family: Geist Pixel;
 }
 
+.loading_screen[data-theme="light"] {
+    background-color: #fff;
+    color: #1f1e1e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.loading_screen[data-theme="dark"] {
+    background-color: #1f1e1e;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .loading {
     position: relative;
     width: 25%;
     height: 25%;
-    border-top : 8px dashed #000;
+    border-top : 7px dashed;
+}
+
+
+.loading[data-theme="light"] {
+    border-color: #000;
+}
+
+.loading[data-theme="dark"] {
+    border-color: #fff;
 }
 
 #plane {
     position: absolute;
-    width: 50px;
+    width: 65px;
     height: auto;
-    top: -40px; 
+    top: -50px;
     display: block;
     transform: translateX(-50%);
     animation: takeoff 4s linear infinite;
@@ -53,12 +74,17 @@ body[data-theme="dark"] {
     }
 }
 
-
-
 #title:hover {
     transition: 0.35s;
-    text-shadow: 2px 2px 1px #000;
     animation-name: title-hover;
+}
+
+#title:hover[data-theme="light"] {
+    
+}
+
+#title:hover[data-theme="dark"] {
+    
 }
 
 .home{

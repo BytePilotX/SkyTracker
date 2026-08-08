@@ -17,13 +17,13 @@
         <!--LOADING SCREEN DISABLED DURING DEVELOPMENT -->
         <div class="loading_screen" id="loading_screen">
 
-            <div class="loading"><img id="plane" src="../media/loading/plane3.png"/></div>
+            <div class="loading" id="loading"><img id="plane" src="../media/loading/plane3.png"/></div>
 
             <h1 id="title">SkyTracker</h1>
 
         </div>
 
-        <div style="display: none;" id="home_page" class="home">
+        <div id="main_page" class="home" style="visibility: hidden;">
 
              <div class="sidebar" id="side_bar">
                 
@@ -33,7 +33,7 @@
                         <img src="../media/sidebar/sky_blank_circle.png" id="sidebar_logo"/>
                         <h2>SkyTracker</h2>
                         <a href="../HTML/index.html">Map</a>
-                        <a href="#">Flights</a>
+                        <a href="../HTML/flights.html">Flights</a>
                         <a href="../HTML/logbook.html">Logbook</a>
                         <a href="../HTML/settings.html">Settings</a>
                     </nav>
@@ -53,4 +53,14 @@
     <script src="../JS/loading.js"></script>
     <script src="../JS/map.js"></script>
     <script src="../JS/settings.js"></script>
+    <script>
+        let planeImg = document.getElementById("plane");
+        var storedAppearance = localStorage.getItem("appearance");
+        if (!storedAppearance) {
+            console.log("NO STORED APP");
+            planeImg.src = "../media/loading/plane3.png";
+        } else if (storedAppearance === "dark") {
+            planeImg.src = "../media/loading/plane3dark.png";
+        }
+    </script> 
 </html>

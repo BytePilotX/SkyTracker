@@ -13,26 +13,28 @@
         crossorigin=""/>
     </head>
 
-    <body onload="onPageLoad()">
+    <body onload="onPageLoad()" id="body">
+        
         <div class="loading_screen" id="loading_screen">
-            <div class="loading"><img id="plane" src="../media/loading/plane3.png"/></div>
+            <div class="loading" id="loading"><img id="plane" src="../media/loading/plane3.png"/></div>
             <h1 id="title">SkyTracker</h1>
         </div>
 
-        <div class="sidebar" id="side_bar">
-            <aside>
-                <nav class="hidden-sidebar-links">
-                    <img src="../media/sidebar/sky_blank_circle.png"/>
-                    <h2>SkyTracker</h2>
-                    <a href="../HTML/index.html">Map</a>
-                    <a href="#">Flights</a>
-                    <a href="../HTML/logbook.html">Logbook</a>
-                    <a href="../HTML/settings.html">Settings</a>
-                </nav>
-            </aside>
-        </div>
+        <div class="home" id="main_page" style="visibility: hidden;">
 
-        <div class="logbook_home" id="logbook_home">
+            <div class="sidebar" id="side_bar">
+                <aside>
+                    <nav class="hidden-sidebar-links">
+                        <img src="../media/sidebar/sky_blank_circle.png"/>
+                        <h2>SkyTracker</h2>
+                        <a href="../HTML/index.html">Map</a>
+                        <a href="#">Flights</a>
+                        <a href="../HTML/logbook.html">Logbook</a>
+                        <a href="../HTML/settings.html">Settings</a>
+                    </nav>
+                </aside>
+            </div>
+
             <div class="logbook_top_home" id="logbook_top_home">
                 <h1>Logbook</h1>
                 <p>
@@ -46,4 +48,14 @@
     </body>
     <script src="../JS/loading.js"></script>
     <script src="../JS/settings.js"></script>
+    <script>
+        let planeImg = document.getElementById("plane");
+        var storedAppearance = localStorage.getItem("appearance");
+        if (!storedAppearance) {
+            console.log("NO STORED APP");
+            planeImg.src = "../media/loading/plane3.png";
+        } else if (storedAppearance === "dark") {
+            planeImg.src = "../media/loading/plane3dark.png";
+        }
+    </script>
 </html>
