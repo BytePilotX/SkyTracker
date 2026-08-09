@@ -14,7 +14,7 @@ This is a project I would like to begin working on in the near future, it will b
   **NOTICES**
   - This is not a guranteed project and I may or may not continue developing it.
   - This project will take a lot of time and workload for me to build.
-  - I am very happy to take on board a select few people to help with development
+  - When SkyTracker gains basic functionality I will be happy to accept pull requests for people who want to contribute
   - If you want to contribute open a discussion and see where it goes from there!
   - All current progress will be in the 'dev' branch. Do not expect a working or complete product as its only there to show progress.
 
